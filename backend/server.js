@@ -66,5 +66,10 @@ const start = async () => {
     process.exit(1);
   }
 };
+const cors = require('cors');
+
+app.use(cors({
+  origin: 'https://career-guidance-ougstzebu-atulk33029s-projects.vercel.app/'
+}));
 
 start();
